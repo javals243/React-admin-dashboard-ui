@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  transition: all 300ms ease;
+  transition: all 3000ms ease;
   padding-top: 4rem;
+
 }
 .logo{
     display: flex;
@@ -27,6 +28,7 @@
   display: flex;
   flex-direction: column;  
   gap:2rem;
+ 
 }
 .menuItem{
     display: flex;
@@ -35,7 +37,7 @@
     height: 2.5rem;
     margin-left: 2rem;
     position: relative;
-    transition: all 3000ms ease;
+    transition: all 300ms ease;
     font-size: 14px;
     border-radius: 0.7rem;
 }
@@ -51,4 +53,10 @@
   width: 8px;
   height: 100%;
   background-color: var(--pink);
+  margin-right: calc(1rem - 8px);
+}
+.menu .menuItem:last-child{
+    position: absolute;
+    bottom: 2.3rem;
+    width: 100%;
 }
